@@ -1,4 +1,5 @@
 #!/bin/bash
 
-IMAGE=kalilinux/kali-rolling:latest
+IMAGE=codeandrew/kali-rolling:10tools
+docker build -t $IMAGE .
 docker run -i -t $IMAGE /bin/bash
