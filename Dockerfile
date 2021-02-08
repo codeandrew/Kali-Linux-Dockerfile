@@ -3,6 +3,7 @@ FROM kalilinux/kali-rolling:latest
 
 ARG DEBIAN_FRONTEND=noninteractive
 # Update
+COPY config/sources.list /etc/apt/sources.list
 RUN apt-get -y update && apt-get -y dist-upgrade && apt-get -y autoremove && apt-get clean
 
 # Install ZSH shell with custom settings and set it as default shell
@@ -10,7 +11,7 @@ RUN apt-get -y install git zsh && wget --no-check-certificate https://github.com
 COPY config/.zshrc /root/.zshrc
 
 # Install Kali Linux "Top 10" metapackage and a few useful tools
-RUN apt-get -y install vim kali-linux-top10 net-tools whois\
+RUN apt-get -y install vim kali-tools-top10 net-tools whois\
       netcat exploitdb man-db dirb nikto wpscan uniscan nodejs\
       npm python3-pip tor proxychains\
       metasploit-framework
