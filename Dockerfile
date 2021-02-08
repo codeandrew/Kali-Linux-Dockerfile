@@ -23,4 +23,3 @@ RUN apt-get -y install pciutils usbutils
 # Configure proxychains with Tor
 COPY config/proxychains.conf /etc/proxychains.conf
 
-ENTRYPOINT ["/bin/bash"]
