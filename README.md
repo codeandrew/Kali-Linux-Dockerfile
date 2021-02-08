@@ -53,3 +53,19 @@ Check out [Kali Linux on a Docker container: the easiest way](https://medium.com
 - Add some more useful tools, languages.
 
 **Enjoy!**
+
+### References
+
+- https://www.unixmen.com/run-kali-linux-2-0-in-docker-container/
+- https://www.kali.org/docs/containers/official-kalilinux-docker-images/
+- https://www.kali.org/docs/containers/using-kali-docker-images/ 
+
+Usage 
+```bash
+kali@kali:~$ docker pull kalilinux/kali-rolling
+kali@kali:~$
+kali@kali:~$ docker run --tty --interactive kalilinux/kali-rolling /bin/bash
+root@e4ae79503654:/
+root@e4ae79503654:/ exit
+kali@kali:~$
+```
