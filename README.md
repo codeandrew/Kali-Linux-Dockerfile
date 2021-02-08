@@ -59,6 +59,7 @@ Check out [Kali Linux on a Docker container: the easiest way](https://medium.com
 - https://www.unixmen.com/run-kali-linux-2-0-in-docker-container/
 - https://www.kali.org/docs/containers/official-kalilinux-docker-images/
 - https://www.kali.org/docs/containers/using-kali-docker-images/ 
+- https://www.kali.org/news/major-metapackage-makeover/
 
 Usage 
 ```bash
