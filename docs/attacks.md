@@ -22,3 +22,18 @@ Type 'exploit'
 ### Impact
 
 An attacker could use this vulnerability to trigger large unfreed memory allocations on the system leading to a remote Denial of Service.
+
+
+## References
+
+WRITING AN EXPLOIT MODULE
+- https://www.offensive-security.com/metasploit-unleashed/shell/
+
+MSFVENOM
+- https://www.offensive-security.com/metasploit-unleashed/msfvenom/
+
+MYSQL
+- https://www.offensive-security.com/metasploit-unleashed/scanner-mysql-auxiliary-modules/
+
+Ransomware
+- https://www.sentinelone.com/blog/build-your-own-ransomware-project-root-behind-enemy-lines-part-2/
