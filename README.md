@@ -18,16 +18,15 @@ These are the main **tools** which are included:
 
 Note that you can _add/modify/delete_ configuration files by doing the related changes in the dockerfile.
 
-##### DockerHub
-
-```bash
-docker pull codeandrew/kali-rolling:latest
-```
 ### Todos
 
 - Add some more useful tools, languages.
 
-**Enjoy!**
+## Dockerhub
+
+```bash
+docker pull codeandrew/kali-rolling:latest
+```
 
 ### References
 
@@ -36,14 +35,13 @@ docker pull codeandrew/kali-rolling:latest
 - https://www.kali.org/docs/containers/using-kali-docker-images/ 
 - https://www.kali.org/news/major-metapackage-makeover/
 
-Usage 
+## Usage 
 
 ```bash
 docker run -it --tty -v scripts:/tmp -v /var/run.docker.sock:/var/run/docker.sock -p 9990-9999:9990-9999 codeandrew/kali-rolling:latest
 ──(root💀2f2521b98c43)-[/tmp]
 └─#
 ```
-
 
 ## My Installed Tools
 
@@ -55,11 +53,10 @@ docker run -it --tty -v scripts:/tmp -v /var/run.docker.sock:/var/run/docker.soc
 | SSlyze    | Checking weakness in SSL                                                                                                                                                                                        | sslyze --heartbleed --sslv2 --sslv3 --tlsv1 --tlsv1_1 --tlsv1_2 ${TARGET} | sslyze       |   |
 | WhatWeb   | Scans Website description, performance and metadata                                                                                                                                                             | whatweb ${TARGET}                                                         | whatweb      |   |
 
-
-
 ## Troubleshoot
 
 ### Ua Tester
+
 ua-tester is not working because of python3
 test git clone to /opt
 https://gitlab.com/kalilinux/packages/ua-tester
@@ -67,7 +64,8 @@ https://gitlab.com/kalilinux/packages/ua-tester
 ### Go Buster Not working properly
 
 apt install gobuster
-```
+
+```bash
 ┌──(root💀ce5167076588)-[/opt/ua-tester]
 └─# gobuster -v testphp.vulnweb.com -w /usr/share/wordlists/dirb/common.txt
 Error: unknown command "testphp.vulnweb.com" for "gobuster"
