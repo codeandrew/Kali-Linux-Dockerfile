@@ -61,8 +61,7 @@ python3 -m http.server 9999 # Desired Port
 | SSlyze    | Checking weakness in SSL                                                                                                                                                                                        | sslyze --heartbleed --sslv2 --sslv3 --tlsv1 --tlsv1_1 --tlsv1_2 ${TARGET}            | sslyze       | https://tools.kali.org/information-gathering/sslyze |
 | WhatWeb   | Scans Website description, performance and metadata                                                                                                                                                             | whatweb ${TARGET}                                                                    | whatweb      | https://tools.kali.org/web-applications/whatweb     |
 | Nikto     | web server scanner                                                                                                                                                                                              | nikto -Display 1234EP -o /tmp/report.html -Format htm -Tuning 123bde -host ${TARGET} | nikto        | https://tools.kali.org/information-gathering/nikto  |
-
- nikto -Display 1234EP -o /tmp/report.html -Format htm -Tuning 123bde -host testphp.vulnweb.com
+| Uniscan   | Uniscan is a simple Remote File Include,  Local File Include and Remote Command Execution  vulnerability scanner                                                                                                | uniscan -u http://${TARGET} -qweds                                                   | uniscan      | https://tools.kali.org/web-applications/uniscan     |
 
 ## Troubleshoot
 
