@@ -1,5 +1,9 @@
 #!/bin/bash
 
-IMAGE=codeandrew/kali-rolling:10tools
+VERSION=1.1.0
+IMAGE=codeandrew/kali-rolling:${VERSION}
+
 docker build -t $IMAGE .
-docker run -i -t $IMAGE /bin/bash
+docker run -it --tty \
+-v /var/run.docker.sock:/var/run/docker.sock \
+$IMAGE
