@@ -42,7 +42,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: codeandrew/kali-rolling:top10tools
+          tags: codeandrew/kali-rolling:latest
           
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
