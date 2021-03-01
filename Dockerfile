@@ -17,7 +17,8 @@ RUN apt-get -y install vim kali-tools-top10 net-tools whois\
       netcat exploitdb man-db dirb nikto wpscan uniscan nodejs\
       npm python3-pip tor proxychains\
       metasploit-framework \
-      dmitry lbd
+      dmitry lbd \
+      sslyze
 
 # Install some useful hardware packages
 RUN apt-get -y install pciutils usbutils 
