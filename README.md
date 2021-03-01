@@ -70,3 +70,16 @@ root@e4ae79503654:/
 root@e4ae79503654:/ exit
 kali@kali:~$
 ```
+
+
+## My Installed Tools
+
+| Tool Name | Description                                                                                                                                                                                                     | Command                              | Package Name |   |
+|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|--------------|---|
+| Nmap      | Network Scanner                                                                                                                                                                                                 | nmap -v -A -T4 -Pn ${TARGET}         | nmap         |   |
+| Dmitry    | Deepmagic Information Gathering Tool.  Basic functionality of DMitry allows for information to be gathered about a target host from a simple whois lookup  on  the target to uptime reports  and TCP portscans. | dmitry ${TARGET} dmitry -s ${TARGET} | dmitry       |   |
+| LBD       | Load Balancer Detector                                                                                                                                                                                          | lbd ${TARGET}                        | lbd          |   |
+
+
+:
+
