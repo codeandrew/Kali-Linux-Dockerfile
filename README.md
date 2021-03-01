@@ -82,3 +82,11 @@ kali@kali:~$
 | SSlyze    | Checking weakness in SSL                                                                                                                                                                                        | sslyze --heartbleed --sslv2 --sslv3 --tlsv1 --tlsv1_1 --tlsv1_2 ${TARGET} | sslyze       |   |
 | WhatWeb   | Scans Website description, performance and metadata                                                                                                                                                             | whatweb ${TARGET}                                                         | whatweb      |   |
 
+
+
+## Troubleshoot
+
+### Ua Tester
+ua-tester is not working because of python3
+
+https://gitlab.com/kalilinux/packages/ua-tester
