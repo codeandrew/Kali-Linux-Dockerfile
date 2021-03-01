@@ -88,5 +88,5 @@ kali@kali:~$
 
 ### Ua Tester
 ua-tester is not working because of python3
-
+test git clone to /opt
 https://gitlab.com/kalilinux/packages/ua-tester
