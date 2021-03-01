@@ -18,7 +18,7 @@ RUN apt-get -y install vim kali-tools-top10 net-tools whois\
       npm python3-pip tor proxychains\
       metasploit-framework \
       dmitry lbd \
-      sslyze
+      sslyze whatweb
 
 # Install some useful hardware packages
 RUN apt-get -y install pciutils usbutils 
