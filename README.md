@@ -43,6 +43,14 @@ docker run -it --tty -v scripts:/tmp -v /var/run.docker.sock:/var/run/docker.soc
 └─#
 ```
 
+### Simple WebServer
+
+### Python
+
+```bash
+python3 -m http.server 9999 # Desired Port
+```
+
 ## My Installed Tools
 
 | Tool Name | Description                                                                                                                                                                                                     | Command                                                                   | Package Name |   |
