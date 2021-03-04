@@ -12,6 +12,8 @@ RUN apt-get -y install git
 #COPY config/.zshrc /root/.zshrc
 COPY config/.profile /root/.bash_aliases
 
+RUN mkdir /reports
+
 # Install Kali Linux "Top 10" metapackage and a few useful tools
 RUN apt-get -y install vim kali-tools-top10 net-tools whois\
       netcat exploitdb man-db dirb nikto wpscan uniscan nodejs\
