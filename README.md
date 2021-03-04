@@ -2,6 +2,12 @@
 
 A simple dockerfile which allows you to build a _docker image_ starting from the latest official one of **Kali Linux** and including some useful tools.
 
+## Demo
+
+A Demo of Containerized Kali Linux using tor and proxychains
+
+![Kali Docker](./demo/kali-docker-tor-demo.gif)
+
 ## Included tools
 
 These are the main **tools** which are included:
