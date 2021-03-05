@@ -12,6 +12,9 @@ RUN apt-get -y install git
 #COPY config/.zshrc /root/.zshrc
 COPY config/.profile /root/.bash_aliases
 
+RUN mkdir /opt/scripts
+COPY scripts /opt/scripts
+
 RUN mkdir /reports
 
 # Install Kali Linux "Top 10" metapackage and a few useful tools
