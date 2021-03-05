@@ -20,7 +20,7 @@ theHarvester -d $TARGET -l 300 -b linkedin
 theHarvester -d $TARGET -l 300 -b google
 
 #==============================================
-# Scanning Infrasctructure
+# Network Scanning
 #==============================================
 
 bigline
