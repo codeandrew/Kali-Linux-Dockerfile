@@ -21,7 +21,7 @@ RUN apt-get -y install vim kali-tools-top10 net-tools whois\
       metasploit-framework \
       dmitry lbd \
       sslyze whatweb \
-      wordlists
+      wordlists theharvester
 
 # Install some useful hardware packages
 RUN apt-get -y install pciutils usbutils 
