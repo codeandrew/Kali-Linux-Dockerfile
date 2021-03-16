@@ -35,13 +35,6 @@ These are the main **tools** which are included:
 
 Note that you can _add/modify/delete_ configuration files by doing the related changes in the dockerfile.
 
-### References
-
-- https://www.unixmen.com/run-kali-linux-2-0-in-docker-container/
-- https://www.kali.org/docs/containers/official-kalilinux-docker-images/
-- https://www.kali.org/docs/containers/using-kali-docker-images/ 
-- https://www.kali.org/news/major-metapackage-makeover/
-
 ### Simple WebServer
 
 ### Python
@@ -79,3 +72,10 @@ apt install gobuster
 └─# gobuster -v testphp.vulnweb.com -w /usr/share/wordlists/dirb/common.txt
 Error: unknown command "testphp.vulnweb.com" for "gobuster"
 ```
+
+### References
+
+- https://www.unixmen.com/run-kali-linux-2-0-in-docker-container/
+- https://www.kali.org/docs/containers/official-kalilinux-docker-images/
+- https://www.kali.org/docs/containers/using-kali-docker-images/ 
+- https://www.kali.org/news/major-metapackage-makeover/
