@@ -8,6 +8,17 @@ A Demo of Containerized Kali Linux using tor and proxychains
 
 ![Kali Docker](./demo/kali-docker-tor-demo.gif)
 
+## Usage
+
+```bash
+# Pull Image 
+docker pull codeandrew/kali-rolling:latest
+# Run Image with Docker Sock for Faster Process 
+docker run -it --tty -v scripts:/tmp -v /var/run.docker.sock:/var/run/docker.sock -p 9990-9999:9990-9999 codeandrew/kali-rolling:latest
+──(root💀2f2521b98c43)-[/tmp]
+└─#
+```
+
 ## Included tools
 
 These are the main **tools** which are included:
@@ -24,30 +35,12 @@ These are the main **tools** which are included:
 
 Note that you can _add/modify/delete_ configuration files by doing the related changes in the dockerfile.
 
-### Todos
-
-- Add some more useful tools, languages.
-
-## Dockerhub
-
-```bash
-docker pull codeandrew/kali-rolling:latest
-```
-
 ### References
 
 - https://www.unixmen.com/run-kali-linux-2-0-in-docker-container/
 - https://www.kali.org/docs/containers/official-kalilinux-docker-images/
 - https://www.kali.org/docs/containers/using-kali-docker-images/ 
 - https://www.kali.org/news/major-metapackage-makeover/
-
-## Usage 
-
-```bash
-docker run -it --tty -v scripts:/tmp -v /var/run.docker.sock:/var/run/docker.sock -p 9990-9999:9990-9999 codeandrew/kali-rolling:latest
-──(root💀2f2521b98c43)-[/tmp]
-└─#
-```
 
 ### Simple WebServer
 
