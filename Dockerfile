@@ -1,4 +1,5 @@
-# Kali Linux latest with useful tools by zMrDevJ
+# FORKED base repo from zMrDevJ
+# Updated and Mainted by codeandrew
 FROM kalilinux/kali-rolling:latest
 
 ARG DEBIAN_FRONTEND=noninteractive
