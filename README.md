@@ -35,16 +35,9 @@ These are the main **tools** which are included:
 
 Note that you can _add/modify/delete_ configuration files by doing the related changes in the dockerfile.
 
-### References
+### CheatSheets
 
-- https://www.unixmen.com/run-kali-linux-2-0-in-docker-container/
-- https://www.kali.org/docs/containers/official-kalilinux-docker-images/
-- https://www.kali.org/docs/containers/using-kali-docker-images/ 
-- https://www.kali.org/news/major-metapackage-makeover/
-
-### Simple WebServer
-
-### Python
+### One Liner Server
 
 ```bash
 python3 -m http.server 9999 # Desired Port
@@ -62,6 +55,7 @@ python3 -m http.server 9999 # Desired Port
 | Nikto     | web server scanner                                                                                                                                                                                              | nikto -Display 1234EP -o /tmp/report.html -Format htm -Tuning 123bde -host ${TARGET} | nikto        | https://tools.kali.org/information-gathering/nikto  |
 | Uniscan   | Uniscan is a simple Remote File Include,  Local File Include and Remote Command Execution  vulnerability scanner                                                                                                | uniscan -u http://${TARGET} -qweds                                                   | uniscan      | https://tools.kali.org/web-applications/uniscan     |
 
+
 ## TOOLS
 
 ```bash
@@ -71,21 +65,10 @@ wget https://raw.githubusercontent.com/mzet-/linux-exploit-suggester/master/linu
 
 ```
 
-## Troubleshoot
+## References
 
-### Ua Tester
+- https://www.unixmen.com/run-kali-linux-2-0-in-docker-container/
+- https://www.kali.org/docs/containers/official-kalilinux-docker-images/
+- https://www.kali.org/docs/containers/using-kali-docker-images/ 
+- https://www.kali.org/news/major-metapackage-makeover/
 
-ua-tester is not working because of python3
-test git clone to /opt
-https://gitlab.com/kalilinux/packages/ua-tester
-
-### Go Buster Not working properly
-
-apt install gobuster
-
-```bash
-┌──(root💀ce5167076588)-[/opt/ua-tester]
-└─# gobuster -v testphp.vulnweb.com -w /usr/share/wordlists/dirb/common.txt
-Error: unknown command "testphp.vulnweb.com" for "gobuster"
-
-```
