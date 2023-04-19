@@ -62,6 +62,15 @@ python3 -m http.server 9999 # Desired Port
 | Nikto     | web server scanner                                                                                                                                                                                              | nikto -Display 1234EP -o /tmp/report.html -Format htm -Tuning 123bde -host ${TARGET} | nikto        | https://tools.kali.org/information-gathering/nikto  |
 | Uniscan   | Uniscan is a simple Remote File Include,  Local File Include and Remote Command Execution  vulnerability scanner                                                                                                | uniscan -u http://${TARGET} -qweds                                                   | uniscan      | https://tools.kali.org/web-applications/uniscan     |
 
+## TOOLS
+
+```bash
+mkdir -p $HOME/repo
+cd $HOME/repo
+wget https://raw.githubusercontent.com/mzet-/linux-exploit-suggester/master/linux-exploit-suggester.sh -O les.sh
+
+```
+
 ## Troubleshoot
 
 ### Ua Tester
@@ -78,4 +87,5 @@ apt install gobuster
 ┌──(root💀ce5167076588)-[/opt/ua-tester]
 └─# gobuster -v testphp.vulnweb.com -w /usr/share/wordlists/dirb/common.txt
 Error: unknown command "testphp.vulnweb.com" for "gobuster"
+
 ```
