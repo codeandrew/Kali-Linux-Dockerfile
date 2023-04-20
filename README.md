@@ -11,10 +11,14 @@ A Demo of Containerized Kali Linux using tor and proxychains
 ## Usage
 
 ```bash
-# Pull Image 
-docker pull codeandrew/kali-rolling:latest
+
+NAME=kali
+IMAGE=codeandrew/kali-rolling:latest
+KALI_DIR=$HOME/kali
+mkdir -p $KALI_DIR
+
 # Run Image with Docker Sock for Faster Process 
-docker run -it --tty -v scripts:/tmp -v /var/run.docker.sock:/var/run/docker.sock -p 9990-9999:9990-9999 codeandrew/kali-rolling:latest
+docker run -it --tty -v $KALI_DIR:/home -v /var/run.docker.sock:/var/run/docker.sock -p 4440-4449:4440-4449 --name $NAME $IMAGE
 ──(root💀2f2521b98c43)-[/tmp]
 └─#
 ```
