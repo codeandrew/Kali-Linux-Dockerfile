@@ -69,6 +69,15 @@ wget https://raw.githubusercontent.com/mzet-/linux-exploit-suggester/master/linu
 
 ```
 
+## Docker Networking 
+
+when starting the container to use the host network stack. This will make the container share the same network interfaces as the host machine
+```
+docker run --net=host <image_name> <command>
+```
+
+> Note that using --net=host can have security implications, as the container will have access to all network interfaces and ports of the host machine. So be careful when using this option and make sure your container is properly secured
+
 ## References
 
 - https://www.unixmen.com/run-kali-linux-2-0-in-docker-container/
