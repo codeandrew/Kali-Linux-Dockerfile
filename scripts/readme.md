@@ -12,6 +12,19 @@ if [ -z "$rhost" ]; then
     read rhost
 fi
 
+# Check if directory wordlist exists
+wordlist="/usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt"
+
+if [ -f "$wordlist" ]; then
+    echo "File exists: $wordlist"
+else
+    echo "File does not exist: $wordlist"
+    find / -name "directory-list-*" 2>/dev/null
+    echo "Please enter directory for wordlist"
+    read wordlist
+fi
+
+
 # Print the value of $rhost
 echo "The value of \$rhost is: $rhost"
 
