@@ -16,7 +16,7 @@ fi
 echo "The value of \$rhost is: $rhost"
 
 nmap -sVC --min-rate 8888 -T4 $rhost -vv -oN nmap-$rhost.txt
-gobuster dir -u $rhost -w $wordlist | tee gobuster-$rhost.txt
+gobuster dir -u $rhost -w $wordlist -t 50 | tee gobuster-$rhost.txt
 enum4linux -a $rhost | tee enum-$rhost.txt
 
 ```
