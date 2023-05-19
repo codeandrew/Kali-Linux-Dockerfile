@@ -34,8 +34,16 @@ enum4linux -a $rhost | tee enum-$rhost.txt
 
 ## PrivEsc
 
+LinuxSmartEnumeration
+```bash
+wget https://raw.githubusercontent.com/diego-treitos/linux-smart-enumeration/master/lse.sh; chmod +x ./lse.sh
+# ./lse.sh : to look at overview
+# ./lse.sh -l 1 -i : to verbose
+```
+
 LinEnum
 https://github.com/rebootuser/LinEnum/blob/master/LinEnum.sh
 ```bash 
 wget https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh
 ```
+
