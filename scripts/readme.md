@@ -33,6 +33,13 @@ enum4linux -a $rhost | tee enum-$rhost.txt
 ```
 
 ## PrivEsc
+
+for starters test this
+```
+sudo -l
+find / -type f -a \( -perm -u+s -o -perm -g+s \) -exec ls -l {} \; 2> /dev/null
+```
+
 LinuxSmartEnumeration 
 https://github.com/diego-treitos/linux-smart-enumeration
 ```bash
