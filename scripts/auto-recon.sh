@@ -24,7 +24,7 @@ fi
 # Print the value of $rhost
 echo "The value of \$rhost is: $rhost"
 
-nmap -sVC --min-rate 8888 -T4 $rhost -vv -oN nmap-$rhost.txt
-nmap -sV -T4 --script vuln --min-rate 8888 -vv -d -oN nmap-vuln.txt $rhost
+nmap -sSVC --min-rate 8888 -T4 $rhost -vv -oN nmap-$rhost.txt
+nmap -sSV -T4 --script vuln --min-rate 8888 -vv -d -oN nmap-vuln.txt $rhost
 gobuster dir -u $rhost -w $dir_wordlist -t 50 | tee gobuster-$rhost.txt
 enum4linux -a $rhost | tee enum-$rhost.txt
