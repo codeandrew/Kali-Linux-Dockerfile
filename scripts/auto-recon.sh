@@ -29,7 +29,6 @@ nmap -sSV -T4 --script vuln --min-rate 8888 -vv -d -oN nmap-vuln.txt $rhost
 gobuster dir -u $rhost -w $dir_wordlist -t 50 | tee gobuster-$rhost.txt
 enum4linux -a $rhost | tee enum-$rhost.txt
 
-
 #===========================================================================
 # auto recon v2.0.0
 #===========================================================================
@@ -41,7 +40,8 @@ function run_nmap() {
 }
 
 function run_ffuf() {
-    ffuf -u $rhost/FUZZ -w $dir_wordlist -t 50 | tee "ffuf-$rhost.txt"
+    # needs valid domain
+    ffuf -u https://${rhost}/FUZZ -w $dir_wordlist -t 50 | tee "ffuf-$rhost.txt"
 }
 
 function run_enum4linux() {
@@ -59,7 +59,7 @@ function run_sublist3r() {
 # Main function
 function main() {
     read -p "Enter the remote host: " rhost
-    dir_wordlist="/usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt"
+    dir_wordlist="wordlists/directory-list-2.3-medium.txt"
 
     if [ ! -f "$dir_wordlist" ]; then
         echo "Wordlist file does not exist: $dir_wordlist"
